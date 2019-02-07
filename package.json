@@ -1,0 +1,24 @@
+{
+  "name": "good-burger-mysql",
+  "version": "1.0.0",
+  "description": "Burgers app using Mysql Node.js and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "noob"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tygabomb/Good-Burger-MySQL.git"
+  },
+  "author": "B-Harrell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tygabomb/Good-Burger-MySQL/issues"
+  },
+  "homepage": "https://github.com/Tygabomb/Good-Burger-MySQL#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql2": "^1.6.4"
+  }
+}

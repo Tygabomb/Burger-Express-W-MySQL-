@@ -1,5 +1,6 @@
 # Good-Burger w/ MySQL
-Welcome to Good burger, home of the Good burger, can I take your order? 
+
+## Welcome to Good burger, home of the Good burger, can I take your order? 
 
 A Burger Eatin' Application With Node.js/Express/MySQL/Handlebars
 
