@@ -1,0 +1,43 @@
+/* li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+ */
+
+ body {
+  background-color: #f0560e;
+}
+
+.jumbotron h1{
+	color: #eaec4c;
+
+}
+
+.jumbotron{
+	padding-top: 1%;
+	background-color:transparent !important;
+}
+
+img {
+margin-top: 5%;
+  width: 15%;
+}
+
+.submitFont{
+	color: rgb(8, 145, 149);
+}

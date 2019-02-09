@@ -1,4 +1,4 @@
-# Good-Burger w/ MySQL
+# Good-Burger w/ MySQL :hamburger:
 
 ## Welcome to Good burger, home of the Good burger, can I take your order? 
 
