@@ -1,6 +1,4 @@
-INSERT INTO burgers (name) VALUES ('');
-INSERT INTO burgers (name) VALUES ('');
-INSERT INTO burgers (name, sleepy) VALUES ('Sylvester', true);
-INSERT INTO burgers (name, sleepy) VALUES ('Marilyn Manson', true);
-INSERT INTO burgers (name, sleepy) VALUES ('Joe Biden', true);
-INSERT INTO burgers (name) VALUES ('Owens');
+-- insert 3 burgers
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('Turkey', false, CURRENT_TIMESTAMP);
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('BBQ Chicken', false, CURRENT_TIMESTAMP);
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('Kitchen Sink', false, CURRENT_TIMESTAMP);
