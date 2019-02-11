@@ -44,7 +44,35 @@
   </center>
 </div>
 
-
+<script>
+  //Devour button.
+  $(".devour").on("click", function () {
+    let id = $(this).attr("info");
+    $.ajax({
+      method: "put",
+      url: "api/burgers/" + id
+    }).then(data => {
+      console.log(data)
+      location.reload();
+    })
+    console.log(id)
+  });
+  // Submit a new burger button.
+  $(".create-form").on("submit", function (event) {
+    event.preventDefault();
+    let newBurger = {
+      burger_name: $("#new-burger").val().trim(),
+      devoured: "0"
+    };
+    console.log(newBurger)
+    $.ajax("/api/burgers", {
+      type: "post",
+      data: newBurger
+    }).then(function () {
+      location.reload();
+    })
+  });
+</script>
 
 
 
