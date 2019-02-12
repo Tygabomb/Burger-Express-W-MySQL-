@@ -1,10 +1,10 @@
 
  body {
-  background-color: #f0560e;
+  background-color: url(/Users/Mac/Desktop/Boot-Camp/RePo/Good-Burger-MySQL/public/assets/img/good-burger-logo.png);
 }
 
 .jumbotron h1{
-	color: #eaec4c;
+	color: hsl(34, 84%, 48%);
 
 }
 

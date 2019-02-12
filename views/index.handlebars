@@ -4,11 +4,11 @@
     <div class="col-md-4">
       <h3 class="submitFont">Burgers Available</h3>
       <div id="burgersAvailable">
-        {{!-- <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> --}}
+        
 
-          {{#each burgers}}
+          {{#each burger}}
           {{#unless devoured}}
-          <form action="burger/eat/{{id}}" method="POST">
+          <form action="burger/eat/{{id}}">
             <div class="input-group">
               <li class="form-control">{{id}}. {{burger_name}}</li>
                 <span class="input-group-btn">
@@ -31,10 +31,10 @@
       <div id="alreadyEaten">
 
         <!-- Dynamically Insert Devoured Burgers Here -->
-        {{#each burgers}}
+        {{#each burger}}
           {{#if this.devoured}}
             <div class="input-group">
-              <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
+              <li class="form-control">{{id}}. {{burger_name}}</li>
             </div>
           {{/if}}
         {{/each}}
@@ -43,36 +43,4 @@
     </div>
   </center>
 </div>
-
-<script>
-  //Devour button.
-  $(".devour").on("click", function () {
-    let id = $(this).attr("info");
-    $.ajax({
-      method: "put",
-      url: "api/burgers/" + id
-    }).then(data => {
-      console.log(data)
-      location.reload();
-    })
-    console.log(id)
-  });
-  // Submit a new burger button.
-  $(".create-form").on("submit", function (event) {
-    event.preventDefault();
-    let newBurger = {
-      burger_name: $("#new-burger").val().trim(),
-      devoured: "0"
-    };
-    console.log(newBurger)
-    $.ajax("/api/burgers", {
-      type: "post",
-      data: newBurger
-    }).then(function () {
-      location.reload();
-    })
-  });
-</script>
-
-
 

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const burger = require('../models/burger.js');
+const burger = require('../models/burger');
 
 //Setup Routes
 router.get("/", function (req, res) {
@@ -14,17 +14,17 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-  burger.insertOne([
+  burger.create([
     "burger_name", "devoured"
   ], [
       req.body.burger_name, req.body.devoured
-    ], function (result) {
+    ], (result) => {
       res.json({ id: result.insertId });
     });
 });
 
 router.put("/api/burgers/:id", function (req, res) {
-  burger.updateOne({
+  burger.update({
     devoured: true
   }, {
       id: req.params.id
